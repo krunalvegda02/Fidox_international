@@ -10,7 +10,7 @@ export function WhatsAppButton() {
       <div className="absolute inset-0 rounded-full bg-[#25D366] opacity-40 animate-ping group-hover:opacity-0 transition-opacity duration-500"></div>
       
       <a
-        href="https://wa.me/qr/2BFZ6ZDAMN2BC1"
+        href="https://wa.me/918878963333"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Contact Fidox on WhatsApp for Export Inquiries"

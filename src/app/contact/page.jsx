@@ -181,12 +181,20 @@ export default function ContactPage() {
                      <div className={clsx('grid', 'grid-cols-1', 'gap-3', 'sm:gap-3', 'md:gap-4', 'lg:gap-5')}>
                         {[
                            {
-                              label: "Direct Trade Line",
-                              val: "+91 7778886559",
+                              label: "Upendrasinh Parmar",
+                              val: "+91 88789 63333",
                               icon: <FiPhone className={clsx('w-5', 'sm:w-6', 'md:w-7', 'lg:w-8', 'h-5', 'sm:h-6', 'md:h-7', 'lg:h-8')} />,
-                              link: "tel:+917778886559",
+                              link: "tel:+918878963333",
                               color: "from-blue-500 to-blue-600",
                               bgColor: "bg-blue-50 group-hover:bg-blue-100"
+                           },
+                           {
+                              label: "Vishalkumar Boliya",
+                              val: "+91 78019 04184",
+                              icon: <FiPhone className={clsx('w-5', 'sm:w-6', 'md:w-7', 'lg:w-8', 'h-5', 'sm:h-6', 'md:h-7', 'lg:h-8')} />,
+                              link: "tel:+917801904184",
+                              color: "from-indigo-500 to-indigo-600",
+                              bgColor: "bg-indigo-50 group-hover:bg-indigo-100"
                            },
                            {
                               label: "Email Our Desk",
@@ -198,9 +206,9 @@ export default function ContactPage() {
                            },
                            {
                               label: "Chat on WhatsApp",
-                              val: "+91 7778886559",
+                              val: "+91 88789 63333",
                               icon: <FiMessageCircle className={clsx('w-5', 'sm:w-6', 'md:w-7', 'lg:w-8', 'h-5', 'sm:h-6', 'md:h-7', 'lg:h-8')} />,
-                              link: "https://wa.me/qr/FDGPNCKQQGMCL1",
+                              link: "https://wa.me/918878963333",
                               color: "from-emerald-500 to-emerald-600",
                               bgColor: "bg-emerald-50 group-hover:bg-emerald-100"
                            },
@@ -491,9 +499,9 @@ export default function ContactPage() {
                            <span className="text-gradient">HEADQUARTERS.</span>
                         </h3>
 
-                        <p className={clsx('text-xs', 'sm:text-sm', 'md:text-base', 'lg:text-lg', 'text-slate-600', 'font-semibold', 'uppercase', 'tracking-wide', 'leading-relaxed', 'max-w-lg')}>
-                           Located in India's premier agricultural export hub, our office ensures direct farm checks and seamless port operations for your business.
-                        </p>
+                                 <p className={clsx('text-[8px]', 'sm:text-[9px]', 'md:text-xs', 'lg:text-sm', 'font-semibold', 'text-slate-600', 'uppercase', 'tracking-wide', 'leading-relaxed', 'max-w-lg')}>
+                                    Located in Dholka, Ahmedabad — our office ensures direct farm checks and seamless port operations for your business.
+                                 </p>
 
                         <div className={clsx('group', 'relative', 'mt-4', 'sm:mt-6', 'md:mt-8')}>
                            <div className={clsx('absolute', '-inset-1', 'sm:-inset-1.5', 'md:-inset-2', 'bg-gradient-to-r', 'from-brand-gold/20', 'to-brand-navy/20', 'rounded-xl', 'sm:rounded-2xl', 'md:rounded-3xl', 'blur-lg', 'opacity-0', 'group-hover:opacity-100', 'transition-opacity', 'duration-500')}></div>
@@ -505,8 +513,9 @@ export default function ContactPage() {
                               <div>
                                  <h4 className={clsx('text-xs', 'sm:text-sm', 'md:text-base', 'lg:text-lg', 'font-black', 'text-brand-navy', 'uppercase', 'tracking-wider', 'mb-1', 'sm:mb-1.5')}>Primary Headquarters</h4>
                                  <p className={clsx('text-[8px]', 'sm:text-[9px]', 'md:text-xs', 'lg:text-sm', 'font-semibold', 'text-slate-600', 'uppercase', 'tracking-wide', 'leading-relaxed')}>
-                                    PLOT NO 57, GROUND FLOOR R.S. NO 21 MAIN ROAD, <br />
-                                    LAKHABAVAL JAMNAGAR, GUJRAT 361006
+                                    A-22 GROUND FLOOR, BHAGIRATH VILLA SHOP,<br />
+                                    NESDA ROAD OPP DHRUV MARBAL,<br />
+                                    DHOLKA, AHMEDABAD, GUJARAT 382225
                                  </p>
                               </div>
                            </div>
@@ -518,7 +527,7 @@ export default function ContactPage() {
                         <div className={clsx('absolute', '-inset-4', 'sm:-inset-6', 'md:-inset-8', 'bg-gradient-to-r', 'from-brand-gold/25', 'via-brand-navy/20', 'to-brand-gold/25', 'rounded-2xl', 'sm:rounded-3xl', 'md:rounded-4xl', 'blur-2xl', 'opacity-0', 'hover:opacity-100', 'transition-opacity', 'duration-500')}></div>
                         <div className={clsx('relative', 'p-1', 'sm:p-2', 'md:p-3', 'rounded-lg', 'sm:rounded-2xl', 'md:rounded-3xl', 'bg-white', 'shadow-2xl', 'overflow-hidden', 'aspect-video', 'md:aspect-square', 'border-2', 'border-slate-200', 'hover:border-brand-gold/50', 'transition-all', 'duration-500')}>
                            <iframe
-                              src="https://maps.google.com/maps?q=PLOT+NO+57,+GROUND+FLOOR+R.S.+NO+21+MAIN+ROAD+ROAD,+LAKHABAVAL+JAMNAGAR,+GUJRAT+361006&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                              src="https://maps.google.com/maps?q=A-22+Ground+Floor+Bhagirath+Villa+Shop+Nesda+Road+Dholka+Ahmedabad+Gujarat+382225&t=&z=14&ie=UTF8&iwloc=&output=embed"
                                title="Google Maps Location - Fidox Headquarters Jamnagar Gujarat"
                               className={clsx('w-full', 'h-full', 'rounded-lg', 'sm:rounded-2xl', 'md:rounded-2xl')}
                               loading="lazy"
