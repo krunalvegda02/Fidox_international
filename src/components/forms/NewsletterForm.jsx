@@ -20,7 +20,10 @@ export function NewsletterForm() {
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_ID,
         {
+          title: 'Newsletter Subscription',
+          name: 'Newsletter Subscriber',
           from_name: 'Newsletter Subscriber',
+          email: formData.get('email'),
           from_email: formData.get('email'),
           reply_to: formData.get('email'),
           message: 'New newsletter subscription request.',

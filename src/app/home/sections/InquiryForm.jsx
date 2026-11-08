@@ -24,7 +24,10 @@ export function InquiryForm() {
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_ID,
         {
+          title: 'Homepage Inquiry',
+          name: name,
           from_name: name,
+          email: email,
           from_email: email,
           reply_to: email,
           phone: phone,

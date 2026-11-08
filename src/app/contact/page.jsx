@@ -91,7 +91,10 @@ export default function ContactPage() {
             EMAILJS_SERVICE_ID,
             EMAILJS_TEMPLATE_ID,
             {
+               title: 'New Client Inquiry',
+               name: formData.name,
                from_name: formData.name,
+               email: formData.email,
                from_email: formData.email,
                reply_to: formData.email,
                phone: formData.phone,

@@ -20,7 +20,10 @@ export default function ContactForm() {
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_ID,
         {
+          title: 'New Client Inquiry',
+          name: formData.get('name'),
           from_name: formData.get('name'),
+          email: formData.get('email'),
           from_email: formData.get('email'),
           reply_to: formData.get('email'),
           phone: formData.get('phone'),
