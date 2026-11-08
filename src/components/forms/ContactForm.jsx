@@ -4,7 +4,7 @@ import { Button } from "@/components/shared/Button";
 
 import { useState } from "react";
 import emailjs from '@emailjs/browser';
-import { EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, EMAILJS_PUBLIC_KEY } from "@/lib/emailjs";
+import { EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, EMAILJS_PUBLIC_KEY, DEFAULT_TO_EMAIL } from "@/lib/emailjs";
 
 export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -22,10 +22,11 @@ export default function ContactForm() {
         {
           from_name: formData.get('name'),
           from_email: formData.get('email'),
+          reply_to: formData.get('email'),
           phone: formData.get('phone'),
           company: formData.get('company'),
           message: formData.get('message'),
-          to_email: 'info@fidoxinternational.com'
+          to_email: DEFAULT_TO_EMAIL
         },
         EMAILJS_PUBLIC_KEY
       );

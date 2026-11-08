@@ -4,7 +4,7 @@ import { Button } from "@/components/shared/Button";
 
 import { useState } from "react";
 import emailjs from '@emailjs/browser';
-import { EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, EMAILJS_PUBLIC_KEY } from "@/lib/emailjs";
+import { EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, EMAILJS_PUBLIC_KEY, DEFAULT_TO_EMAIL } from "@/lib/emailjs";
 
 export function NewsletterForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -22,8 +22,9 @@ export function NewsletterForm() {
         {
           from_name: 'Newsletter Subscriber',
           from_email: formData.get('email'),
+          reply_to: formData.get('email'),
           message: 'New newsletter subscription request.',
-          to_email: 'info@fidoxinternational.com'
+          to_email: DEFAULT_TO_EMAIL
         },
         EMAILJS_PUBLIC_KEY
       );

@@ -4,7 +4,7 @@ import { Container } from "@/components/shared/Container";
 import { PageHero } from "@/components/shared/PageHero";
 import { useState } from "react";
 import emailjs from '@emailjs/browser';
-import { EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, EMAILJS_PUBLIC_KEY } from "@/lib/emailjs";
+import { EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, EMAILJS_PUBLIC_KEY, DEFAULT_TO_EMAIL } from "@/lib/emailjs";
 import {
    FiMail, FiPhone, FiMapPin, FiClock, FiSend,
    FiGlobe, FiMessageCircle, FiActivity, FiArrowRight,
@@ -93,10 +93,11 @@ export default function ContactPage() {
             {
                from_name: formData.name,
                from_email: formData.email,
+               reply_to: formData.email,
                phone: formData.phone,
                company: formData.company,
                message: formData.message,
-               to_email: 'info@fidoxinternational.com'
+               to_email: DEFAULT_TO_EMAIL
             },
             EMAILJS_PUBLIC_KEY
          );
