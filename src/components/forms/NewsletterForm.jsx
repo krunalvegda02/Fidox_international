@@ -4,6 +4,7 @@ import { Button } from "@/components/shared/Button";
 
 import { useState } from "react";
 import emailjs from '@emailjs/browser';
+import { EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, EMAILJS_PUBLIC_KEY } from "@/lib/emailjs";
 
 export function NewsletterForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -16,15 +17,15 @@ export function NewsletterForm() {
 
     try {
       await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
         {
           from_name: 'Newsletter Subscriber',
           from_email: formData.get('email'),
           message: 'New newsletter subscription request.',
           to_email: 'info@fidoxinternational.com'
         },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+        EMAILJS_PUBLIC_KEY
       );
 
       alert("Thank you for subscribing to our newsletter!");

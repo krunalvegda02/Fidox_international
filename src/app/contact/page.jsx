@@ -4,6 +4,7 @@ import { Container } from "@/components/shared/Container";
 import { PageHero } from "@/components/shared/PageHero";
 import { useState } from "react";
 import emailjs from '@emailjs/browser';
+import { EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, EMAILJS_PUBLIC_KEY } from "@/lib/emailjs";
 import {
    FiMail, FiPhone, FiMapPin, FiClock, FiSend,
    FiGlobe, FiMessageCircle, FiActivity, FiArrowRight,
@@ -87,8 +88,8 @@ export default function ContactPage() {
 
       try {
          await emailjs.send(
-            process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+            EMAILJS_SERVICE_ID,
+            EMAILJS_TEMPLATE_ID,
             {
                from_name: formData.name,
                from_email: formData.email,
@@ -97,7 +98,7 @@ export default function ContactPage() {
                message: formData.message,
                to_email: 'info@fidoxinternational.com'
             },
-            process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+            EMAILJS_PUBLIC_KEY
          );
 
          setSubmitStatus("success");
