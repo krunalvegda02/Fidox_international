@@ -20,6 +20,6 @@ export default function robots() {
       },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,
-    host: baseUrl,
+    host: "www.fidoxinternational.com",
   };
 }
